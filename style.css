@@ -1,0 +1,158 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-image: url('https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?q=80&w=1000');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: background-image 2s ease-in-out;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    padding: 20px;
+    box-sizing: border-box;
+    background: transparent; 
+}
+
+#bg-layar {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 2s ease-in-out;
+    margin: 20px 0;
+    border-radius: 20px;
+    position: relative;
+    background-blend-mode: darken;
+}
+
+.text-jln {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.jadwal-list {
+    display: grid; /* Gunakan GRID agar bisa diatur jumlah kolomnya */
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Gunakan @media bukan GRID */
+@media (max-width: 768px) {
+    .jadwal-list {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5); 
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.info h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.info p {
+    margin: 5px 0 0 0;
+    color: #ccc;
+}
+
+.jam-digital {
+    text-align: right;
+    border: 2px solid #ff8c00;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background: #111;
+}
+
+#jam {
+    margin: 0;
+    font-size: 3.5rem;
+    color: #ff8c00; 
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+#tgl {
+    margin: 5px 0 0 0;
+    font-weight: bold;
+}
+
+.sholat {
+    flex: 1;
+    background: rgba(30, 30, 30, 0.8);
+    margin: 5px;
+    padding: 15px;
+    border-radius: 15px;
+    border-bottom: 5px solid #ff8c00; 
+}
+
+.sholat span {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.waktu {
+    font-size: 2.2rem;
+    color: #ff8c00;
+    margin-top: 10px;
+}
+
+.countdown-container {
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.sholat1 {
+    display: flex;
+    align-items: center;
+    background: #ff8c00; 
+    padding: 10px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+#nama-sholat1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    border-right: 3px solid white;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+#timer-sholat {
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: bold;
+}
